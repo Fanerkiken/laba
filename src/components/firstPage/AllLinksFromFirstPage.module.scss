@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.navbar {
+  width: 796px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  height: 30px;
+
+  &_firstLinka {
+    display: flex;
+    align-items: center;
+    margin-left: 1px;
+    color: #E1B168;
+    text-decoration: none;
+  }
+
+  &_linka  {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+}
