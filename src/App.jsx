@@ -7,13 +7,6 @@ import twitterLogo from './assets/img/twitterLogo.svg'
 import pinterestLogo from './assets/img/pinterestLogo.svg'
 import Buttons from "./components/firstPage/buttons/Buttons";
 import AllLinksFromFirstPage from "./components/firstPage/AllLinksFromFirstPage";
-import {Routes} from "react-router-dom";
-import {Route} from "react-router-dom";
-import About from "./components/About";
-import OurMenu from "./components/OurMenu";
-import Pages from "./components/Pages";
-import Blog from "./components/Blog";
-import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -41,10 +34,7 @@ function App() {
                   <div className={styles.page2_information}></div>
               </div>
           </div>
-
       </>
-
-
   );
 }
 
