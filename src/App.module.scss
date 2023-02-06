@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
-//font-family: 'Cormorant Infant', serif;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 
 
 .header {
@@ -50,16 +51,245 @@
   width: 1440px;
   height: 810px;
 
-  &_information {
-    background-color: #292E36;
-    width: 655px;
-    height: 418px;
+  &_informationAndImg {
+    margin-top: 40px;
+    display: flex;
+
+    &_rectangleH {
+      width: 30px;
+      height: 770px;
+      background-color: #5C6168;
+
+    }
+
+    &_rectangleHRigth {
+      width: 30px;
+      height: 770px;
+      background-color: #5C6168;
+      margin-right: 10px;
+    }
+
+    &_imgBox {
+      width: 655px;
+      height: 770px;
+
+      &_img {
+        width: 595px;
+        height: 740px;
+        margin: 30px 30px 1px 30px;
+
+        &_pechatka {
+          margin: 0 10px 0 255px;
+        }
+      }
+
+
+    }
+
+    &_information {
+      width: 655px;
+      height: 418px;
+      margin: 40px 40px 1px 40px;
+
+      &_welcome {
+        width: 470px;
+        height: 110px;
+        margin-top: 180px;
+        font-family: 'Cormorant Infant', serif;
+        font-size: 100px;
+        color: white;
+      }
+
+      &_restaurant {
+        width: 453px;
+        height: 110px;
+        font-family: 'Cormorant Infant', serif;
+        font-size: 100px;
+        color: white;
+      }
+
+      &_peopleAndFood {
+        width: 616px;
+        height: 60px;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 20px;
+        color: white;
+        margin: 26px 0 35px 0;
+      }
+    }
   }
-
-
 }
 
-.test {
-  background-color: blueviolet !important;
-  color: red !important;
+.footerPage2 {
+  width: 1440px;
+  height: 243px;
+
+  &_information {
+    width: 1360px;
+    height: 83px;
+    margin: 100px 40px 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_imgAndInfo {
+      width: 443px;
+      height: 83px;
+      display: flex;
+      align-items: center;
+
+      &_svg {
+        width: 83px;
+        height: 83px;
+        border-radius: 100%;
+        background-color: #292E36;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &_contactInfo {
+        width: 285px;
+        height: 74px;
+        margin-left: 20px;
+
+        &_title {
+          font-family: 'Cormorant Infant', serif;
+          font-size: 30px;
+          height: 39px;
+          width: max-content;
+          color: #292E36;
+
+        }
+
+        &_description {
+          height: 30px;
+          width: max-content;
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 20px;
+          color: #555555;
+
+        }
+      }
+    }
+  }
+}
+
+.theDeliciousStory {
+  width: 1440px;
+  height: 728px;
+
+  &_container {
+    width: 1360px;
+    height: 568px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_img {
+      width: 743px;
+      height: 519px;
+
+    }
+
+    &_story {
+      width: 572px;
+      height: 568px;
+
+      &_title {
+        height: 56px;
+        width: max-content;
+        font-family: 'Cormorant Infant', serif;
+        font-size: 40px;
+        color: #292E36;
+        margin-bottom: 15px;
+      }
+
+      &_description {
+        height: 90px;
+        width: 559px;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 20px;
+        color: #555555;
+        margin-bottom: 5px;
+
+      }
+
+      &_openClose {
+        height: 156px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_start {
+          width: 274px;
+          height: 156px;
+
+          &_year {
+            font-family: 'Cormorant Infant', serif;
+            font-size: 40px;
+            height: 56px;
+            width: max-content;
+            color: #292E36;
+            margin-bottom: 15px;
+          }
+
+          &_description {
+            width: 247px;
+            height: 60px;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 20px;
+            color: #555555;
+            margin: 0 27px 5px 0;
+          }
+        }
+
+        &_close {
+          width: 274px;
+          height: 156px;
+
+          &_year {
+            font-family: 'Cormorant Infant', serif;
+            font-size: 40px;
+            height: 56px;
+            width: max-content;
+            color: #292E36;
+            margin-bottom: 15px;
+          }
+
+          &_description {
+            width: 247px;
+            height: 60px;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 20px;
+            color: #555555;
+            margin: 0 27px 5px 0;
+          }
+        }
+      }
+
+      &_signed {
+        width: 572px;
+        height: 161px;
+
+        &_title {
+          width: 100px;
+          height: 30px;
+          font-size: 20px;
+          font-family: "Josefin Sans", sans-serif;
+          color: #555555;
+
+        }
+
+        &_signedSvg {
+          margin-top: 21px;
+        }
+      }
+    }
+  }
+}
+
+.viewMenuButton {
+  width: 230px !important;
+  color: #E1B168 !important;
 }
