@@ -10,8 +10,22 @@ import locationLogoPage2 from './assets/img/locationLogoPage2.svg'
 import openHourLogo from './assets/img/openHoursLogo.svg'
 import reservationLogo from './assets/img/reservationLogo.svg'
 import signedLogo from './assets/img/sindedLogoSvg.svg'
+import imgDeliciousStory from './assets/img/imgForDStory.png'
+import imgArka from './assets/img/img.png'
+import imgSpecialDish from './assets/img/imgSpecialDishes.png'
+import imgRawScallopsFromErquy from './assets/img/imgRawScallopsfromErquy.png'
+import imgSpringRoll from './assets/img/imgSpringRoll.png'
+import imgFrSoup from './assets/img/imgFrSoup.png'
+import imgTomatoBruschetta from './assets/img/imgTomatoBruschetta.png'
+import imgGrilledSwithDS from './assets/img/imgGrilledSwithDS.png'
+import imgRoastBeefWithVegetable from './assets/img/imgRoastBeefWithVegetable.png'
+import imgMarrekeshVegetetationCurruy from './assets/img/imgMarrekeshVegetetationCurruy.png'
+import imgSpicyVeganPotatoCurry from './assets/img/imgSpicyVeganPotatoCurry.png'
+import imgApplePieWCream from './assets/img/imgApplePieWCream.png'
+import imgLemonMeringuePie from './assets/img/imgLemonMeringuePie.png'
 import Buttons from "./components/firstPage/buttons/Buttons";
 import AllLinksFromFirstPage from "./components/firstPage/AllLinksFromFirstPage";
+import PageWithSlider from './components/PageWithSlider'
 
 function App() {
   return (
@@ -48,7 +62,7 @@ function App() {
                       <div className={styles.page2_informationAndImg_rectangleH}></div>
                       <div className={styles.page2_informationAndImg_imgBox}>
                           <div className={styles.page2_informationAndImg_imgBox_img}>
-                              <img src="./assets/img/img.png" alt="imgARKA"/>
+                              <img src={imgArka} alt="imgARKA"/>
                               <ReactSVG src={pechatkaLogo} className={styles.page2_informationAndImg_imgBox_img_pechatka}/>
                           </div>
 
@@ -91,7 +105,7 @@ function App() {
               <div className={styles.theDeliciousStory}>
                     <div className={styles.theDeliciousStory_container}>
                         <div className={styles.theDeliciousStory_container_img}>
-                            <img src="./assets/img/imgForDStory.png" alt="imgForDStory"/>
+                            <img src={imgDeliciousStory} alt="imgForDStory"/>
                         </div>
                         <div className={styles.theDeliciousStory_container_story}>
                             <div className={styles.theDeliciousStory_container_story_title}>The Delicious Story</div>
@@ -115,6 +129,165 @@ function App() {
                         </div>
                     </div>
               </div>
+              <div className={styles.menu}>
+                  <div className={styles.menu_specialDishes}>
+                      <div className={styles.menu_specialDishes_information}>
+                          {/*<div className={styles.menu_specialDishes_information_borderOutCaption}></div>*/}
+                          <div className={styles.menu_specialDishes_information_caption}>MENU</div>
+                          {/*<div className={styles.menu_specialDishes_information_borderOutCaption}></div>*/}
+                          <div className={styles.menu_specialDishes_information_title}>Try Our Special dishes</div>
+                          <div className={styles.menu_specialDishes_information_description}>Every time you perfectly dine with us, it should happy for great inspired food in an environment designed with individual touches unique to the local area.</div>
+                      </div>
+                      <div className={styles.menu_specialDishes_img}>
+                          <img src={imgSpecialDish} alt='SpecialDishes' />
+                      </div>
+                      <div className={styles.menu_specialDishes_button}>
+                          <Buttons ghost className={styles.seeAllDishesButton}>See all dishes</Buttons>
+                      </div>
+                  </div>
+                  <div className={styles.menu_typeOfFood}>
+                      <div className={styles.menu_typeOfFood_starters}>
+                          <div className={styles.menu_typeOfFood_title}>Starters</div>
+                          <div className={styles.menu_typeOfFood_dishWithDescription}>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription}>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_img}>
+                                      <img src={imgRawScallopsFromErquy} alt='imgRawScallopsFromErquy' />
+                                  </div>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription}>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_title}>Raw Scallops from Erquy</div>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_description}>Shuck the scallop to that used for oysters</div>
+                                  </div>
+                              </div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_divForBorder}></div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_price}>$40</div>
+                          </div>
+                          <div className={styles.menu_typeOfFood_dishWithDescription}>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription}>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_img}>
+                                      <img src={imgSpringRoll} alt='imgSpringRoll' />
+                                  </div>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription}>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_title}>Spring Roll</div>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_description}>Add oil to a hot pan spring onion whites</div>
+                                  </div>
+                              </div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_divForBorder}></div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_price}>$20</div>
+                          </div>
+                          <div className={styles.menu_typeOfFood_dishWithDescription}>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription}>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_img}>
+                                      <img src={imgFrSoup} alt='imgFrSoup' />
+                                  </div>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription}>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_title}>French Onion Soup</div>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_description}>Wheat flour, apple cider vinegar, bread</div>
+                                  </div>
+                              </div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_divForBorder}></div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_price}>$25</div>
+                          </div>
+                          <div className={styles.menu_typeOfFood_dishWithDescription}>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription}>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_img}>
+                                      <img src={imgTomatoBruschetta} alt='imgTomatoBruschetta' />
+                                  </div>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription}>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_title}>French Onion Soup</div>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_description}>Wheat flour, apple cider vinegar, bread</div>
+                                  </div>
+                              </div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_divForBorder}></div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_price}>$30</div>
+                          </div>
+                      </div>
+                      <div className={styles.menu_typeOfFood_mainDish}>
+                          <div className={styles.menu_typeOfFood_title}>Main Dish</div>
+                          <div className={styles.menu_typeOfFood_dishWithDescription}>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription}>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_img}>
+                                      <img src={imgGrilledSwithDS} alt='imgGrilledSwithDS' />
+                                  </div>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription}>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_title}>Grilled Salmon with Dill Sauce</div>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_description}>Brown sugar, salmon fillet, Dijon mustard</div>
+                                  </div>
+                              </div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_divForBorder}></div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_price}>$40</div>
+                          </div>
+                          <div className={styles.menu_typeOfFood_dishWithDescription}>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription}>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_img}>
+                                      <img src={imgRoastBeefWithVegetable} alt='imgRoastBeefWithVegetable' />
+                                  </div>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription}>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_title}>Roast Beef with Vegetable</div>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_description}>Green beans, rib eye, olive oil, beef</div>
+                                  </div>
+                              </div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_divForBorder}></div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_price}>$20</div>
+                          </div>
+                          <div className={styles.menu_typeOfFood_dishWithDescription}>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription}>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_img}>
+                                      <img src={imgMarrekeshVegetetationCurruy} alt='imgMarrekeshVegetetationCurruy' />
+                                  </div>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription}>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_title}>Marrkesh Vegetetarian Curruy</div>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_description}>Sweet potato, eggplant, garbanzo bean</div>
+                                  </div>
+                              </div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_divForBorder}></div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_price}>$25</div>
+                          </div>
+                          <div className={styles.menu_typeOfFood_dishWithDescription}>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription}>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_img}>
+                                      <img src={imgSpicyVeganPotatoCurry} alt='imgSpicyVeganPotatoCurry' />
+                                  </div>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription}>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_title}>Spicy Vegan Potato Curry</div>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_description}>Coconut milk, beans, potatoes, curry powder</div>
+                                  </div>
+                              </div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_divForBorder}></div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_price}>$35</div>
+                          </div>
+                      </div>
+                      <div className={styles.menu_typeOfFood_dessert}>
+                          <div className={styles.menu_typeOfFood_title}>Dessert</div>
+                          <div className={styles.menu_typeOfFood_dishWithDescription}>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription}>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_img}>
+                                      <img src={imgApplePieWCream} alt='imgApplePieWCream' />
+                                  </div>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription}>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_title}>Apple Pie with Cream</div>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_description}>Whipping cream, egg white, cinnamon</div>
+                                  </div>
+                              </div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_divForBorder}></div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_price}>$15</div>
+                          </div>
+                          <div className={styles.menu_typeOfFood_dishWithDescription}>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription}>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_img}>
+                                      <img src={imgLemonMeringuePie} alt='imgLemonMeringuePie' />
+                                  </div>
+                                  <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription}>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_title}>Lemon Meringue Pie</div>
+                                      <div className={styles.menu_typeOfFood_dishWithDescription_imgAndTitleWithDescription_titleDescription_description}>Frozen pie crust, meringue, lemon</div>
+                                  </div>
+                              </div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_divForBorder}></div>
+                              <div className={styles.menu_typeOfFood_dishWithDescription_price}>$30</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            <PageWithSlider />
           </div>
       </>
   );

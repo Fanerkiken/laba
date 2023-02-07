@@ -77,9 +77,18 @@
         width: 595px;
         height: 740px;
         margin: 30px 30px 1px 30px;
+        position: relative;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
 
         &_pechatka {
           margin: 0 10px 0 255px;
+          z-index: 2;
+          position: absolute;
+          top: 0;
         }
       }
 
@@ -123,6 +132,7 @@
 .footerPage2 {
   width: 1440px;
   height: 243px;
+  background-color: #FFF8F5;
 
   &_information {
     width: 1360px;
@@ -178,6 +188,7 @@
 .theDeliciousStory {
   width: 1440px;
   height: 728px;
+  background-color: #FFF8F5;
 
   &_container {
     width: 1360px;
@@ -189,6 +200,11 @@
     &_img {
       width: 743px;
       height: 519px;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+      }
 
     }
 
@@ -289,7 +305,195 @@
   }
 }
 
+.menu {
+  width: 1360px;
+  height: 1724px;
+  margin: 120px 40px 0 40px;
+  display: flex;
+
+  &_specialDishes {
+    width: 492px;
+    height: 955px;
+    margin: 20px 50px 0 0;
+
+    &_information {
+      width: 492px;
+      height: 244px;
+      margin: 0 0 30px 0;
+
+
+      &_borderOutCaption {
+        width: 60px;
+        height: 1px;
+        background-color: #E1B168;
+      }
+
+      &_caption {
+        //width: 60px;
+        width: max-content;
+        height: 27px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #E1B168;
+        border-bottom: 1px solid #E1B168;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 3px;
+        color: #292E36;
+        padding-top: 2px;
+      }
+
+      &_title {
+        width: 375px;
+        height: 56px;
+        font-family: 'Cormorant Infant', serif;
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: 0.2px;
+        color: #292E36;
+        margin: 12px 0 13px 0;
+      }
+
+      &_description {
+        //width: 486px;
+        width: fit-content;
+        //height: 120px;
+        height: fit-content;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        color: #555555;
+        margin: 0 5px 14px 0;
+
+      }
+    }
+
+    &_img {
+      width: 398px;
+      height: 548px;
+      margin-bottom: 60px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &_button {
+
+    }
+  }
+
+  &_typeOfFood {
+    width: 819px;
+    height: 1684px;
+    margin: 0 40px 0 0;
+
+    &_starters {
+      width: 819px;
+      height: 635px;
+    }
+
+    &_mainDish {
+      width: 819px;
+      height: 635px;
+      margin-top: 15px;
+    }
+
+    &_dessert {
+      width: 819px;
+      margin-top: 15px;
+    }
+
+    &_title {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      font-family: 'Cormorant Infant', serif;
+      font-size: 36px;
+      line-height: 50.4px;
+      letter-spacing: 0.2px;
+      margin-bottom: 40px;
+    }
+
+    &_dishWithDescription {
+      width: 819px;
+      height: 84px;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+
+      &_price {
+        font-family: 'Cormorant Infant', serif;
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 0.2px;
+        color: #292E36;
+        margin: 27px 0 13px 10px;
+      }
+
+      &_imgAndTitleWithDescription {
+        //width: 494px;
+        height: 84px;
+        display: flex;
+        align-items: center;
+        flex: 1;
+
+        &_img {
+          width: 84px;
+          height: 84px;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        &_titleDescription {
+          width: fit-content;
+          height: 72px;
+          margin: 0 10px 0 20px;
+          flex: 1;
+
+          &_title {
+            font-family: 'Cormorant Infant', serif;
+            font-size: 30px;
+            line-height: 42px;
+            letter-spacing: 0.2px;
+            color: #292E36;
+            white-space: nowrap;
+          }
+
+          &_description {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            color: #555555;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      &_divForBorder {
+        margin: 50px 0 10px 0;
+        flex: 1;
+        border-bottom: 2px solid #AAAAAA;
+
+      }
+    }
+  }
+}
+
 .viewMenuButton {
   width: 230px !important;
+  color: #E1B168 !important;
+}
+
+.seeAllDishesButton {
+  width: 255px !important;
   color: #E1B168 !important;
 }
