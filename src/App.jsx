@@ -26,6 +26,9 @@ import imgLemonMeringuePie from './assets/img/imgLemonMeringuePie.png'
 import Buttons from "./components/firstPage/buttons/Buttons";
 import AllLinksFromFirstPage from "./components/firstPage/AllLinksFromFirstPage";
 import PageWithSlider from './components/PageWithSlider'
+import OnlyImage from './components/OnlyImage'
+import Offers from './components/Offers'
+import SecondMenu from './components/SecondMenu'
 
 function App() {
   return (
@@ -288,6 +291,9 @@ function App() {
                   </div>
               </div>
             <PageWithSlider />
+            <OnlyImage />
+            <Offers />
+            <SecondMenu />
           </div>
       </>
   );

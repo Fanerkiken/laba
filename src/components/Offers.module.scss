@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+.container {
+  width: 1360px;
+  height: 613px;
+  margin: 140px 40px 120px 40px;
+
+  &_title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &_captain {
+      width: max-content;
+      height: 27px;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid #E1B168;
+      border-bottom: 1px solid #E1B168;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 15px;
+      line-height: 22.5px;
+      letter-spacing: 3px;
+      color: #292E36;
+      padding-top: 2px;
+    }
+
+    &_mainTitle {
+      font-family: 'Cormorant Infant', serif;
+      font-size: 40px;
+      line-height: 56px;
+      letter-spacing: 0.2px;
+      color: #292E36;
+      margin: 12px 0 8px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &_description {
+      width: max-content;
+      height: 30px;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.2px;
+      color: #555555;
+    }
+  }
+
+  &_hotOffers {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    &_imgWithDescription {
+      width: 665px;
+      height: 410px;
+
+    }
+  }
+}
