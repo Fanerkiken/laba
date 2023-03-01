@@ -29,6 +29,8 @@ import PageWithSlider from './components/PageWithSlider'
 import OnlyImage from './components/OnlyImage'
 import Offers from './components/Offers'
 import SecondMenu from './components/SecondMenu'
+import WhatWeOffer from "./components/WhatWeOffer";
+import Blog from "./components/Blog";
 
 function App() {
   return (
@@ -294,6 +296,8 @@ function App() {
             <OnlyImage />
             <Offers />
             <SecondMenu />
+            <WhatWeOffer />
+            <Blog />
           </div>
       </>
   );

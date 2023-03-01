@@ -1,6 +1,7 @@
 .container {
   width: 1360px;
   height: 797px;
+  margin: 0 40px 140px 40px;
 
   &_title {
     display: flex;
@@ -43,4 +44,72 @@
       color: #555555;
     }
   }
+
+  &_img {
+    width: 1360px;
+    height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 19px 0;
+
+    &_cart {
+      width: 317.5px;
+      //height: 450px;
+
+      &_information {
+        width: 317.5px;
+
+        &_titlePrice {
+          width: 318px;
+          height: 63px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &_title {
+            font-family: 'Cormorant Infant', serif;
+            font-size: 30px;
+            line-height: 42px;
+            letter-spacing: 0.2px;
+            color: #292E36;
+          }
+
+          &_price {
+            font-family: 'Cormorant Infant', serif;
+            font-size: 30px;
+            line-height: 42px;
+            letter-spacing: 0.2px;
+            color: #292E36;
+          }
+        }
+
+        &_description {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0.2px;
+          color: #555555;
+        }
+      }
+    }
+  }
+
+  &_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.rectangle {
+  width: 317.5px;
+  height: 1px;
+  background-color: #DCDCDC;
+  margin: 0 0 14px 0;
+}
+
+.seeAllDishesButton {
+  width: 255px !important;
+  color: #E1B168 !important;
 }

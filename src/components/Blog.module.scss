@@ -1,0 +1,144 @@
+.container {
+  width: 1360px;
+  height: 974px;
+  margin: 140px 40px 0 40px;
+
+  &_footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 38px;
+    justify-content: center;
+
+    &_description {
+      width: 547px;
+      height: 90px;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.2px;
+      color: #555555;
+    }
+
+    &_mainTitle {
+      font-family: 'Cormorant Infant', serif;
+      font-size: 30px;
+      line-height: 39px;
+      letter-spacing: 0.2px;
+      color: #292E36;
+      margin: 25px 46px 24px 0;
+      display: flex;
+      align-items: center;
+      width: 502px;
+      height: 78px;
+    }
+
+    &_pos {
+      width: 548px;
+      height: 30px;
+      margin: 50px 46px 0 46px;
+      display: flex;
+      align-items: center;
+
+      &_captain {
+        width: max-content;
+        height: 27px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #E1B168;
+        border-bottom: 1px solid #E1B168;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 15px;
+        line-height: 22.5px;
+        letter-spacing: 3px;
+        color: #292E36;
+        padding-top: 2px;
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &_title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &_captain {
+      width: max-content;
+      height: 27px;
+      display: flex;
+      align-items: center;
+      border-top: 1px solid #E1B168;
+      border-bottom: 1px solid #E1B168;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 15px;
+      line-height: 22.5px;
+      letter-spacing: 3px;
+      color: #292E36;
+      padding-top: 2px;
+    }
+
+    &_mainTitle {
+      font-family: 'Cormorant Infant', serif;
+      font-size: 40px;
+      line-height: 56px;
+      letter-spacing: 0.2px;
+      color: #292E36;
+      margin: 12px 0 8px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &_description {
+      width: max-content;
+      height: 30px;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.2px;
+      color: #555555;
+    }
+  }
+
+  &_shortEvents {
+    width: 1380px;
+    height: 770px;
+    //margin: 0 30px 0 30px;
+    display: flex;
+    align-items: center;
+
+    &_card {
+      width: 640px;
+      height: 720px;
+      margin: 0 25px 0 25px;
+      border-bottom: 1px solid #C4C4C4;
+      border-left: 1px solid #C4C4C4;
+      border-right: 1px solid #C4C4C4;
+
+      &_imgWithButton {
+        width: 640px;
+        height: 384px;
+
+        img {
+          width: 640px;
+          height: 384px;
+          //position: absolute;
+          //opacity: 65%;
+        }
+
+        &_buttonOnImg {
+          width: 640px;
+          height: 384px;
+          background-color: #000000;
+          opacity: 65%;
+          position: absolute;
+
+          &_buttonViewMore {
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
