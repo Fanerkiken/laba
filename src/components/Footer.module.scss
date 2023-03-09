@@ -1,0 +1,317 @@
+.box {
+  width: 1440px;
+  height: 655px;
+  background-color: #292E36;
+}
+
+.topContainer {
+  width: 1360px;
+  height: 474px;
+  margin: 100px 40px 0 40px;
+
+  &_header {
+    width: 1360px;
+    height: 188px;
+    display: flex;
+
+    &_socialMedia {
+      width: 179px;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      padding: 79px 0 79px 0;
+
+      &_1{
+        width: 44px;
+        height: 23px;
+        margin-top: 13px;
+      }
+
+      &_2{
+        width: 44px;
+        height: 23px;
+        margin-top: 35px;
+      }
+
+      &_3{
+        width: 45px;
+        height: 24px;
+        margin-top: 67px;
+      }
+
+      &_4{
+        width: 46px;
+        height: 21px;
+        margin-top: 5px;
+      }
+    }
+
+    &_svgLogo {
+      margin: 27px 312px 0 0;
+    }
+
+    &_hashtag {
+      width: 433px;
+      height: 33px;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 22px;
+      line-height: 33px;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      padding: 139px 48px 16px 0;
+    }
+  }
+
+  &_main {
+    width: 1360px;
+    height: 176px;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+
+    &_contact {
+      width: 332px;
+      height: 176px;
+      margin: 60px 16px 0 0;
+      position: absolute;
+
+      &_captain {
+        width: max-content;
+        height: 23px;
+        top: 5px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #E1B168;
+        border-bottom: 1px solid #E1B168;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #FFFFFF;
+        padding-top: 3px;
+        margin-top: 16px;
+      }
+
+      &_address {
+        width: 332px;
+        height: 90px;
+        margin: 33px 0 15px 0;
+
+        &_1 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0.2px;
+          color: #FFFFFF;
+        }
+
+        &_2 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 19px;
+          line-height: 30px;
+          letter-spacing: 0.2px;
+          color: #E1B168;
+        }
+
+        &_3 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0.2px;
+          color: #E1B168;
+        }
+      }
+    }
+
+    &_inpSub {
+      height: 176px;
+      width: 664px;
+      margin: 0 16px 70px 348px;
+
+      &_containerToDiv {
+        height: 68px;
+        width: 664px;
+        display: flex;
+        margin-top: 25px;
+
+        &_email {
+          width: 662px;
+          height: 68px;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          border: 1px solid #858585;
+          cursor: text;
+
+          &_description {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 22px;
+            color: #FFFFFF;
+            margin-left: 23px;
+          }
+
+          &_subscribe {
+            height: 68px;
+            width: 208px;
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0.20000000298023224px;
+            text-align: center;
+            color: black;
+            margin-left: 374px;
+            cursor: pointer;
+
+          }
+        }
+
+      }
+    }
+
+    &_workingHours {
+      width: 332px;
+      height: 176px;
+
+      &_captain {
+        width: max-content;
+        height: 23px;
+        top: 5px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #E1B168;
+        border-bottom: 1px solid #E1B168;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #FFFFFF;
+        padding-top: 5px;
+        margin: 8px 0 0 156px;
+      }
+
+      &_timetable {
+        width: 332px;
+        height: 90px;
+        margin: 34px 0 10px 0;
+
+        &_1 {
+          display: flex;
+          justify-content: end;
+        }
+      }
+    }
+  }
+}
+
+.botContainer {
+  width: 1440px;
+  height: 81px;
+  border-top: 1px solid #575B62;
+
+  &_footer {
+    height: 30px;
+    width: 1360px;
+    margin: 26px 40px 25px 40px;
+    display: flex;
+    //position: relative;
+
+
+    &_firstDescription{
+      height: 30px;
+      width: 660px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    &_secondDescription {
+      height: 30px;
+      width: 430px;
+      margin-left:  1023px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.day {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: right;
+  color: #E1B168;
+
+}
+
+.text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+.goldTextFooter {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  overflow: hidden;
+  letter-spacing: 0.20000000298023224px;
+  color: #E1B168;
+
+}
+
+.whiteTextFooter {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.20000000298023224px;
+  color: #FFFFFF;
+  padding-right: 8px;
+}
+
+.time {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: right;
+  color: #FFFFFF;
+  padding-left: 8px;
+
+}
+
+
+.captain {
+  width: max-content;
+  height: 23px;
+  top: 5px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #E1B168;
+  border-bottom: 1px solid #E1B168;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  padding-top: 5px;
+}

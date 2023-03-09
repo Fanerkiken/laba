@@ -31,6 +31,8 @@ import Offers from './components/Offers'
 import SecondMenu from './components/SecondMenu'
 import WhatWeOffer from "./components/WhatWeOffer";
 import Blog from "./components/Blog";
+import Reservation from './components/Reservation'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -298,6 +300,8 @@ function App() {
             <SecondMenu />
             <WhatWeOffer />
             <Blog />
+            <Reservation />
+            <Footer />
           </div>
       </>
   );

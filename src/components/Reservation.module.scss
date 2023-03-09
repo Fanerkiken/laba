@@ -1,0 +1,187 @@
+.container {
+  width: 1440px;
+  height: 977px;
+  margin-top: 99px;
+  position: relative;
+
+  img {
+    width: 1440px;
+    height: 977px;
+  }
+
+  &_infoContainer {
+    height: 697px;
+    width: 920px;
+    left: 260px;
+    top: 140px;
+    position: absolute;
+    background: rgba(41, 46, 54, 0.95);
+
+    &_title {
+      margin-top: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      &_captain {
+        width: max-content;
+        height: 23px;
+        top: 5px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #E1B168;
+        border-bottom: 1px solid #E1B168;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #FFFFFF;
+        padding-top: 5px;
+      }
+
+      &_mainTitle {
+        font-family: 'Cormorant Infant', serif;
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        margin: 12px 0 8px 0;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &_inputsAndButton {
+      width: 640px;
+      height: 268px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 20px 140px 155px 140px;
+      position: relative;
+
+      &_nameAndEmail {
+        height: 100px;
+        width: 640px;
+        position: absolute;
+        top: 0;
+      }
+
+      &_personsTimingDate {
+        width: 640px;
+        height: 80px;
+        margin-top: 70px;
+      }
+    }
+  }
+}
+
+.inputsBook {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_name {
+    width: 307px;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid #858585;
+    cursor: text;
+
+    &_description {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 22px;
+      color: #FFFFFF;
+      margin-left: 23px;
+    }
+  }
+
+  &_email {
+    width: 307px;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid #858585;
+    cursor: text;
+
+    &_description {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 22px;
+      color: #FFFFFF;
+      margin-left: 23px;
+    }
+  }
+
+  &_person {
+    width: 198px;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid #858585;
+    cursor: text;
+
+    &_description {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 22px;
+      color: #FFFFFF;
+      margin-left: 23px;
+    }
+  }
+
+  &_timing {
+    width: 198px;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid #858585;
+    cursor: text;
+
+    &_description {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 22px;
+      color: #FFFFFF;
+      margin-left: 23px;
+    }
+  }
+
+  &_date {
+    width: 198px;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    border: 1px solid #858585;
+    cursor: text;
+
+    &_description {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 22px;
+      color: #FFFFFF;
+      margin-left: 23px;
+    }
+  }
+}
+
+.BookATableButton {
+  width: 242px;
+  height: 68px;
+  background-color: #FFFFFF !important;
+  font-family: "Josefin Sans", sans-serif !important;
+  font-size: 22px !important;
+  line-height: 33px !important;
+  letter-spacing: 0.2px !important;
+  color: black !important;
+  padding-top: 5px !important;
+}
+
+.toButton {
+  margin-top: 10px;
+}
